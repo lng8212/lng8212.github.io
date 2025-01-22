@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Larry's Website"
+title                    : "Home"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Long Kieu"
@@ -26,7 +26,7 @@ url                      : "https://lng8212.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/logo.png"
+logo                     : 
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no titlei
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -114,13 +114,15 @@ analytics:
 # Site Author
 author:
   name             : "Long Kieu (Larry)"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "An Android developer with over three years of experience in maintenance, feature development, documentation, and mentoring. I aspire to work in a global, product-oriented environment and aim to become an expert in the Android field, continually advancing my skills and contributing to innovative solutions."
+  avatar           : "/assets/images/profile.png"
+  bio              : "Android Engineer @ FPT Automotive"
   location         : "Hanoi, Vietnam"
   email            : "long05012001@gmail.com"
   facebook         : "long8212"
   linkedin         : "long8212"
-  github           : "lng8212"    
+  github           : "lng8212"   
+  about            : "An Android developer with over three years of experience in maintenance, feature development, documentation, and mentoring. I aspire to work in a global, product-oriented environment and aim to become an expert in the Android field, continually advancing my skills and contributing to innovative solutions.
+  \n\nThis website is designed for the purpose of summarizing and consolidating programming knowledge."
   
 # Site Footer
 footer:
