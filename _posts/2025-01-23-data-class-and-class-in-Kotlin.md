@@ -1,5 +1,5 @@
 ---
-title: Data class and class in Kotlin
+title: Data Class and Class in Kotlin
 excerpt: The difference of data class and class in Kotlin
 last_modified_at: 2025-01-23T09:45:06-05:00
 header: 
