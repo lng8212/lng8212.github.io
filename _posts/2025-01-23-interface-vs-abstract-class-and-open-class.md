@@ -1,3 +1,4 @@
+
 ---
 title: Interface vs Abstract Class and Open Class in Kotlin
 excerpt: In Kotlin, interfaces, abstract classes, and open classes are powerful constructs used for defining behavior and class hierarchies. Each has specific features and use cases that cater to different design requirements.
@@ -17,11 +18,51 @@ In Kotlin, **interfaces**, **abstract classes**, and **open classes** are powerf
 ## **1. Interface**
 
 An **interface** in Kotlin defines a contract that a class can implement. It is primarily used to define behavior that can be shared across unrelated classes.
+### **Backing field and initial values:**
+First of all, we need to know about backing field and why interfaces do not have that function.
 
+In Kotlin, a **backing field** refers to the underlying field that stores the value of a property. This field is automatically generated for properties that have custom getters and setters. It's used when you need to store the value of a property internally and access it through a getter or setter. Backing fields are primarily used in **classes** to implement custom accessors, but **you cannot define a backing field in an interface**. 
+
+In a **class**, you can define a backing field using the `field` keyword within a custom getter or setter. This field is automatically generated for properties that need a custom getter or setter.
+Example:
+```kotlin
+class Example { 
+// Backing field for the property 
+	var name: String = "default" 
+	    get() = field.toUpperCase() // custom getter 
+	    set(value) { field = value.toLowerCase() } // custom setter 
+}
+```
+Interfaces only define **abstract properties** (without the backing field), and they don't store any state. All properties in an interface are implicitly abstract and must be implemented by the classes that inherit from the interface.
+
+**Interfaces and Properties**:
+
+```Kotlin
+interface MyInterface {
+    // Property with a default value
+    val name: String
+        get() = "Default Name"  // Default implementation in the interface
+}
+
+class MyClass : MyInterface {
+    // You can override the default value here if needed
+    override val name: String = "MyClass Name"
+}
+
+fun main() {
+    val myClass = MyClass()
+    println(myClass.name)  // Output: MyClass Name
+}
+
+```
+
+-   **State Storage**: While interfaces can provide default values for properties via **getter implementations**, they do **not** maintain or store the value themselves. The actual **state** (the value) is stored in the class that implements the interface.
+    
+-   **Initialization in Interfaces**: You can indeed **initialize** a property in an interface, but this initialization is provided through a getter (not a backing field). The interface will define a **default behavior** (e.g., returning a value), but the actual property value is **managed by the class** that implements the interface.
 ### **Key Features:**
 
 - **Multiple Inheritance:** A class can implement multiple interfaces, providing flexibility in design.
-    
+
 - **Abstract and Concrete Methods:** Interfaces can have abstract methods (without a body) and concrete methods (with a default implementation).
     
 - **Properties:** Interfaces can declare abstract properties or provide default implementations. However, they cannot have a backing field.
@@ -42,7 +83,7 @@ An **interface** in Kotlin defines a contract that a class can implement. It is 
 
 ### **Example:**
 
-```
+```kotlin
 interface Animal {
     val species: String // Abstract property
     fun sound(): String // Abstract method
@@ -95,7 +136,7 @@ An **abstract class** in Kotlin serves as a blueprint for a group of related cla
 
 ### **Example:**
 
-```
+```kotlin
 abstract class Animal(val species: String) {
     abstract fun sound(): String // Abstract method
 
@@ -144,7 +185,7 @@ An **open class** in Kotlin is a class that can be inherited from. Unlike abstra
 
 ### **Example:**
 
-```
+```kotlin
 open class Animal(val species: String) {
     open fun sound(): String {
         return "Some generic sound"
