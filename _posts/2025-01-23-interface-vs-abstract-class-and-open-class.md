@@ -1,4 +1,3 @@
-
 ---
 title: Interface vs Abstract Class and Open Class in Kotlin
 excerpt: In Kotlin, interfaces, abstract classes, and open classes are powerful constructs used for defining behavior and class hierarchies. Each has specific features and use cases that cater to different design requirements.
