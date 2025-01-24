@@ -35,8 +35,7 @@ class Example {
 Interfaces only define **abstract properties** (without the backing field), and they don't store any state. All properties in an interface are implicitly abstract and must be implemented by the classes that inherit from the interface.
 
 **Interfaces and Properties**:
-Example:
-```Kotlin
+```kotlin
 interface MyInterface {
     // Property with a default value
     val name: String
