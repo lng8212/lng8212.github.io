@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Long Kieu (Larry)"
   avatar           : "/assets/images/profile.png"
-  bio              : "Android Engineer @ FPT Automotive"
+  bio              : "Android Engineer"
   location         : "Hanoi, Vietnam"
   email            : "long05012001@gmail.com"
   facebook         : "long8212"
@@ -322,7 +322,6 @@ defaults:
       layout: single
       author_profile: false
       toc: true
-      toc_sticky: true
       classes: wide
       read_time: true
       share: true
