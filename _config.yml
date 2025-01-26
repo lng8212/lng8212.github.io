@@ -29,7 +29,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : 
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no titlei
 breadcrumbs              : # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 150
 enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
@@ -320,7 +320,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      toc: true
+      toc_sticky: true
+      classes: wide
       read_time: true
       share: true
       related: true

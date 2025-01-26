@@ -8,7 +8,6 @@ tags:
   - kotlin
   - coroutine
   - thread
-toc: true
 ---
 
 ## 1. Thread

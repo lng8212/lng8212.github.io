@@ -7,7 +7,6 @@ teaser:
 tags:
   - kotlin
   - class
-toc: true
 ---
 
 In Kotlin, both `data class` and `class` are used to define classes, but they serve different purposes and come with different features. Here's a detailed comparison:

@@ -7,7 +7,6 @@ teaser:
 tags:
   - kotlin
   - class
-toc: true
 ---
 
 In Kotlin, **interfaces**, **abstract classes**, and **open classes** are powerful constructs used for defining behavior and class hierarchies. Each has specific features and use cases that cater to different design requirements. Here's a detailed summary:
