@@ -1,7 +1,7 @@
 ---
 title: Android Activity Lifecycle Explanation
-excerpt: The short explanation about Android activ
-last_modified_at: 2025-01-26T13:45:06-05:00
+excerpt: The short explanation about Android fragment
+last_modified_at: 2025-01-26T07:45:06-05:00
 header: 
 teaser: 
 tags:
