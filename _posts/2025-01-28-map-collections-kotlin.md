@@ -48,7 +48,9 @@ Kotlin’s `Map` and `MutableMap` are interfaces, and their actual implementatio
 - Example:
 ```kotlin
 val hashMap: MutableMap<Int, String> = HashMap() 
-	hashMap[1] = "One" hashMap[2] = "Two" println(hashMap) 
+	hashMap[1] = "One" 
+    hashMap[2] = "Two" 
+    println(hashMap) 
 	// Output: {1=One, 2=Two}
 ```
 #### 2. **LinkedHashMap** (backed by Java's `LinkedHashMap`)
@@ -58,7 +60,8 @@ val hashMap: MutableMap<Int, String> = HashMap()
 - Example:
 ```kotlin
 val linkedHashMap: MutableMap<Int, String> = LinkedHashMap() 
-	linkedHashMap[1] = "One" linkedHashMap[2] = "Two" 
+	linkedHashMap[1] = "One" 
+    linkedHashMap[2] = "Two" 
 	println(linkedHashMap) // Output: {1=One, 2=Two}`
 ```
 
@@ -80,7 +83,8 @@ println(treeMap) // Output: {1=One, 2=Two}
 - High performance in multi-threaded environments.
 - Example:
 ```kotlin
-val concurrentHashMap = java.util.concurrent.ConcurrentHashMap<Int, String>() concurrentHashMap[1] = "One" 
+val concurrentHashMap = java.util.concurrent.ConcurrentHashMap<Int, String>() 
+concurrentHashMap[1] = "One" 
 concurrentHashMap[2] = "Two" 
 println(concurrentHashMap) // Output: {1=One, 2=Two}
 ```
@@ -98,7 +102,8 @@ println(map[1]) // Output: One
 ```
 #### 2. **Mutable Map**
 ```kotlin
-val mutableMap: MutableMap<Int, String> = mutableMapOf(1 to "One", 2 to "Two") mutableMap[3] = "Three" 
+val mutableMap: MutableMap<Int, String> = mutableMapOf(1 to "One", 2 to "Two") 
+mutableMap[3] = "Three" 
 println(mutableMap) // Output: {1=One, 2=Two, 3=Three}
 ```
 
