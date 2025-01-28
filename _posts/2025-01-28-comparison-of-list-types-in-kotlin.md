@@ -8,7 +8,9 @@ tags:
   - kotlin
   - collection
 ---
+
 Here's a detailed comparison of `ArrayList`, `LinkedList`, `MutableList`, `List`, `Array`, and `Vector` in Kotlin, along with examples and key differences:
+
 ---
 
 ### 1. **`ArrayList`**
