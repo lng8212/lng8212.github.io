@@ -122,4 +122,21 @@ println(vector) // Output: [1, 2]
 - Use **`Array`** for fixed-size collections with better performance.
 - Use **`Vector`** for thread-safe collection needs.
 
-**Note**: List and MutableList cover almost all use cases in Kotlin. Their design aligns perfectly with Kotlin's philosophy of simplicity and immutability by default. Unless you have a very specific requirement (e.g., low-level optimizations, thread-safety, or constant insertion/deletion at specific positions), these two are enough.
+**Note**: 
+
+- List and MutableList cover almost all use cases in Kotlin. Their design aligns perfectly with Kotlin's philosophy of simplicity and immutability by default. Unless you have a very specific requirement (e.g., low-level optimizations, thread-safety, or constant insertion/deletion at specific positions), these two are enough.
+- List internal implementation:
+```kotlin
+fun <T> listOf(vararg elements: T): List<T> {
+    val list = Arrays.asList(*elements)  // Creates a fixed-size list from the provided elements
+    return Collections.unmodifiableList(list)  // Wraps it to prevent structural modifications
+}
+```
+- MutableList:
+```kotlin
+fun <T> mutableListOf(vararg elements: T): MutableList<T> {
+    val list = ArrayList<T>(elements.size)  // Creates an empty mutable list
+    Collections.addAll(list, *elements)    // Adds elements to the list
+    return list  // Returns the mutable list
+}
+```
