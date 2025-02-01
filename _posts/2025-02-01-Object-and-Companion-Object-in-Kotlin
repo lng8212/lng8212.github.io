@@ -1,13 +1,14 @@
 ---
 title: Object and Companion Object in Kotlin
-excerpt: In Kotlin, both `companion object` and `object` classes are used to define singleton-like behavior, but they have different use cases and characteristics.
+excerpt: In Kotlin, both companion object and object classes are used to define singleton-like behavior, but they have different use cases and characteristics.
 last_modified_at: 2025-02-01T09:45:06-05:00
 header: 
 teaser: 
 tags:
-  - SOLID
+  - object
   - kotlin
 ---
+
 In Kotlin, both `companion object` and `object` classes are used to define singleton-like behavior, but they have different use cases and characteristics.
 
 ---
