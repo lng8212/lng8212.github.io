@@ -47,7 +47,6 @@ val result = "Hello".run {
 	this.length    // returns the length of the string 
 } 
 println(result)  // Output: 5
-
 ```
 ### 4. **also**
 
